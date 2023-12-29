@@ -15,14 +15,12 @@ export const authMiddleware = asyncHandler(async(req, res, next) => {
                 next();
             }
         }catch (error) {
-            throw new Error("Not Authorized token expired, Please Login again..")
-                
+            throw new Error("Not Authorized token expired, Please Login again..")           
         }
     } else {
         throw new Error("There is no token attached to header")
     }
 });
-
 export const isAdmin = asyncHandler(async(req ,res, next) => {
     const {email} = req.user;
     const adminUser = await User.findOne({email});
