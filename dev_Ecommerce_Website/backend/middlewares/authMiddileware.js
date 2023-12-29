@@ -16,7 +16,7 @@ export const authMiddleware = asyncHandler(async(req, res, next) => {
                 req.user = user;
                 next();
             }
-        }catch (error) {
+        } catch (error) {
             throw new Error("Not Authorized token expired, Please Login again..")           
         }
     } else {
