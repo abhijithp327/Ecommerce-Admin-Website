@@ -52,6 +52,8 @@ export const productImgResize = async (req, res, next) => {
   );
   next();
 };
+
+
 export const blogImgResize = async (req, res, next) => {
   if (!req.files) return next();
   await Promise.all(
@@ -67,4 +69,3 @@ export const blogImgResize = async (req, res, next) => {
   );
   next();
 };
-
