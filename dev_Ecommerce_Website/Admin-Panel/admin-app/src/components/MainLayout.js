@@ -37,7 +37,6 @@ const MainLayout = () => {
             <div className=' admin bg-white lg-logo'><b>ADMIN</b></div>
             {/* <span className='text-danger lg-logo'>Admin</span> */}
           </h2>
-
         </div>
         <Menu
           theme="dark"
