@@ -12,7 +12,7 @@ const CustomModal = (props) => {
         cancelText="Cancel"
       >
         <p>{ title }</p>
-        
+
       </Modal>
   )
 }
