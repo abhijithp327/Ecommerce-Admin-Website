@@ -12,6 +12,7 @@ const CustomModal = (props) => {
         okText="Ok"
         cancelText="Cancel"
       >
+            
         <p>{ title }</p>
 
       </Modal>
